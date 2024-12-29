@@ -1,1 +1,51 @@
-questo è un cruciverba
+{
+  "data": "29 dicembre 2024",
+  "gioco": {
+    "tipogioco": "classico",
+    "dimensioni": {
+      "width": 4,
+      "height": 4
+    },
+    "sequenza":"CASAI00ROLMIERBA",
+    "orizzontali": [
+      {
+        "orrizontale": "home in italiano",
+        "primoindizio": "inizia con c",
+        "secondoinidizio": "finisce con c"
+      },
+      {
+        "orrizontale": "sono alberi",
+        "primoindizio": "fa rima con colmi",
+        "secondoinidizio": "inizia con o"
+      },
+     {
+        "orrizontale": "un ciuffo di..",
+        "primoindizio": "è verde",
+        "secondoinidizio": "lo mangiano i cavalli"
+      }
+    ],
+    "verticali": [
+      {
+        "verticale": "sinonimo di quindi",
+        "primoindizio": "inizia con ci",
+        "secondoinidizio": "ha un accento"
+      },
+      {
+        "verticale": "loro senza o",
+        "primoindizio": "ha 2 lettere",
+        "secondoinidizio": "inizia con l"
+      },
+      {
+       "verticale": "come stai?",
+        "primoindizio": "molto",
+        "secondoinidizio": "bene"
+      },
+     {
+        "verticale": "cosa respiri?",
+        "primoindizio": "non è acqua",
+        "secondoinidizio": "ma inizia sempre con a"
+      }
+    ]
+  }
+
+}
