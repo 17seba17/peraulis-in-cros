@@ -114,7 +114,7 @@ gameElement.textContent = "CLASSICO";
     body.appendChild(contentDiv);
 
         const keyboardContainer = document.createElement("div");
-              keyboardDiv.className = 'keyboard';
+              keyboardContainer.className = 'keyboard';
     body.appendChild(keyboardContainer);
       
             let width=data[giochi[index+1]].dimensioni.larghezza;
@@ -535,7 +535,6 @@ for (let i = 0; i < width * height; i++) {
     controllaSoluzione.appendChild(btn2);
 
      if (isMobileDevice()) {
-        const keyboardContainer = document.getElementById('keyboardContainer');
         const keyboardDiv = document.createElement('div');
         keyboardDiv.className = 'keyboard';
 
