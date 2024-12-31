@@ -1,1 +1,123 @@
+{
+  "data": "30 dicembre 2024",
+  "gioco": {
+    "puzzle": "classico",
+    "dimensioni": {
+      "larghezza": 4,
+      "altezza": 4
+    },
+    "sequenza":"CASAI00ROLMIERBA",
+    "orrizontali": [
+      {
+        "indizio": "home in italiano",
+        "trad_indizio": "inizia con c",
+        "trad_sol": "finisce con c"
+      },
+      {
+        "indizio": "sono alberi",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+     {
+        "indizio": "un ciuffo di..",
+        "trad_indizio": "è verde",
+        "trad_sol": "lo mangiano i cavalli"
+      }
+    ],
+    "verticali": [
+      {
+        "indizio": "sinonimo di quindi",
+        "trad_indizio": "inizia con ci",
+        "trad_sol": "ha un accento"
+      },
+      {
+        "indizio": "loro senza o",
+        "trad_indizio": "ha 2 lettere",
+        "trad_sol": "inizia con l"
+      },
+      {
+       "indizio": "come stai?",
+        "trad_indizio": "molto",
+        "trad_sol": "bene"
+      },
+     {
+        "indizio": "cosa respiri?",
+        "trad_indizio": "non è acqua",
+        "trad_sol": "ma inizia sempre con a"
+      }
+    ]
+  },
+  "gioco2": {
+    "puzzle": "classico",
+    "dimensioni": {
+      "larghezza": 5,
+      "altezza": 5
+    },
+    "sequenza":"ABCDABCDABCD0ABCDABCDABCD",
+    "orrizontali": [
+      {
+        "indizio": "5 L",
+        "trad_indizio": "inizia con c",
+        "trad_sol": "finisce con c"
+      },
+      {
+        "indizio": "5 LETTERE",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+        {
+        "indizio": "5 LllETTERE",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+        {
+        "indizio": "5 ll",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+     {
+        "indizio": "un ciuffo di..",
+        "trad_indizio": "è verde",
+        "trad_sol": "lo mangiano i cavalli"
+      },
+      {
+        "indizio": "ultimo.",
+        "trad_indizio": "è verde",
+        "trad_sol": "lo mangiano i cavalli"
+      }
+    ],
+    "verticali":[
+      {
+        "indizio": "5 L",
+        "trad_indizio": "inizia con c",
+        "trad_sol": "finisce con c"
+      },
+      {
+        "indizio": "5 LETTERE",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+        {
+        "indizio": "5 LllETTERE",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+        {
+        "indizio": "5 ll",
+        "trad_indizio": "fa rima con colmi",
+        "trad_sol": "inizia con o"
+      },
+     {
+        "indizio": "un ciuffo di..",
+        "trad_indizio": "è verde",
+        "trad_sol": "lo mangiano i cavalli"
+      },
+      {
+        "indizio": "ultimo.",
+        "trad_indizio": "è verde",
+        "trad_sol": "lo mangiano i cavalli"
+      }
+    ]
+  }
 
+}
