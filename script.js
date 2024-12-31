@@ -398,7 +398,7 @@ const clickOnInput = (that) => {
                
        that.focus();
     that.style.backgroundColor = "yellow"; 
-  
+  lastcell=that;
 };
 const getAllInput = () =>{
   let s="";
@@ -510,10 +510,10 @@ itemElement.onclick = function() {
 
 if(data[giochi[index+1]].sequenza==mystring){
  // alert("Complimenti!!!");
- showAlert("Complimenti!!!"+ignoreOnInput);
+ showAlert("Complimenti!!!");
 }
 else{
-showAlert("Ci sono degli errori"+ignoreOnInput);
+showAlert("Ci sono degli errori");
 }
 
     };
@@ -578,7 +578,7 @@ function simulateKeyPress(key) {
             keyCode: key.charCodeAt(0), // Nota: keyCode è deprecato, ma può essere usato per compatibilità
             bubbles: true
         });
-
+       lastcell.focus();
         document.dispatchEvent(event);
         console.log(`Simulata pressione del tasto: ${key}`);
     }
