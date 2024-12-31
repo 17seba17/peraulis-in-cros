@@ -90,3 +90,17 @@ body{
 .alert_btn:hover {
     background-color: #f1f1f1; /* Colore di sfondo al passaggio del mouse */
 }
+
+.keyboard {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin-top: 20px;
+        }
+.key {
+            padding: 20px;
+            background-color: #ccc;
+            text-align: center;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
