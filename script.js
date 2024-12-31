@@ -232,6 +232,7 @@ for (let j = 0; j < height; j++) {
                 const input = document.createElement("input");
                 input.type = "text";
                 input.value="";
+                   if (isMobileDevice()) {        input.readOnly = true; }
             //    input.value = Object.keys(data[giochi[index + 1]].orrizontali[0]);
                 input.style.width = "100%"; 
                 input.style.height = "100%";
@@ -579,6 +580,8 @@ function simulateKeyPress(key) {
             bubbles: true
         });
        lastcell.focus();
+           lastcell.click();
+
         document.dispatchEvent(event);
         console.log(`Simulata pressione del tasto: ${key}`);
     }
