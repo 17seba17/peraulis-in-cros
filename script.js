@@ -565,7 +565,7 @@ const simulateKeyPress = (key) => {
             keyCode: key.charCodeAt(0), // Nota: keyCode è deprecato, ma può essere usato per compatibilità
             bubbles: true
         });
-    alert(lastcell.value);
+   
        lastcell.value=key;
 
         document.dispatchEvent(event);
