@@ -116,8 +116,8 @@ gameElement.textContent = "CLASSICO";
             let width=data[giochi[index+1]].dimensioni.larghezza;
             let height=data[giochi[index+1]].dimensioni.altezza;
 
-  let cell_width= `${0.4*body.clientWidth / width}`;
-// let cell_width=`100px`
+ // let cell_width= `${0.4*body.clientWidth / width}`;
+ let cell_width=`100`
   gridContainer.style.gridTemplateColumns = `repeat(${width}, 1fr)`;
  gridContainer.style.gridTemplateColumns = `repeat(${width}, ${cell_width}px)`;
 gridContainer.style.gridTemplateRows = `repeat(${height}, ${cell_width}px)`;
