@@ -566,7 +566,11 @@ const simulateKeyPress = (key) => {
             bubbles: true
         });
    
-       lastcell.value=key;
+        if (key === 'Backspace' || key === 'Delete') {
+            lastcell.value = ""; // Imposta il valore a una stringa vuota
+        } else {
+            lastcell.value = key; // Aggiunge il carattere all'input
+        }
 
         document.dispatchEvent(event);
         console.log(`Simulata pressione del tasto: ${key}`);
