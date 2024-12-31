@@ -112,7 +112,11 @@ gameElement.textContent = "CLASSICO";
     
      const contentDiv = document.createElement("div");
     body.appendChild(contentDiv);
-    
+
+        const keyboardContainer = document.createElement("div");
+              keyboardDiv.className = 'keyboard';
+    body.appendChild(keyboardContainer);
+      
             let width=data[giochi[index+1]].dimensioni.larghezza;
             let height=data[giochi[index+1]].dimensioni.altezza;
 
@@ -530,7 +534,28 @@ for (let i = 0; i < width * height; i++) {
     controllaSoluzione.appendChild(btn);
     controllaSoluzione.appendChild(btn2);
 
-    
+     if (isMobileDevice()) {
+        const keyboardContainer = document.getElementById('keyboardContainer');
+        const keyboardDiv = document.createElement('div');
+        keyboardDiv.className = 'keyboard';
+
+        // Creazione dei tasti della tastiera
+        const keys = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z','X', 'C', 'V', 'B', 'N', 'M', 'Backspace', 'Delete'];
+        keys.forEach(key => {
+            const keyDiv = document.createElement('div');
+            keyDiv.className = 'key';
+            keyDiv.textContent = key;
+
+            // Aggiungi un evento click per gestire il comportamento del tasto
+            keyDiv.addEventListener('click', () => {
+               simulateKeyPress(key);
+            });
+
+            keyboardDiv.appendChild(keyDiv);
+        });
+
+        keyboardContainer.appendChild(keyboardDiv);
+    }
     
     
   }/////if classic
@@ -543,6 +568,19 @@ for (let i = 0; i < width * height; i++) {
             
 }////update
 
+ function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+function simulateKeyPress(key) {
+        const event = new KeyboardEvent('keydown', {
+            key: key,
+            code: key === 'Backspace' ? 'Backspace' : key === 'Delete' ? 'Delete' : `Key${key}`,
+            char: key,
+            keyCode: key.charCodeAt(0), // Nota: keyCode è deprecato, ma può essere usato per compatibilità
+            bubbles: true
+        });
 
-
+        document.dispatchEvent(event);
+        console.log(`Simulata pressione del tasto: ${key}`);
+    }
 window.onload = getJson;///check
