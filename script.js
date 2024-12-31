@@ -556,7 +556,7 @@ for (let i = 0; i < width * height; i++) {
 
         keyboardContainer.appendChild(keyboardDiv);
     }
-const simulateKeyPress = (key) => 
+const simulateKeyPress = (key) => {
 //function simulateKeyPress(key) {
         const event = new KeyboardEvent('keydown', {
             key: key,
