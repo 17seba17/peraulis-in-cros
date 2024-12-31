@@ -1,0 +1,92 @@
+body{
+  padding: 20px;
+}
+
+* {
+            box-sizing: border-box; /* Include padding e bordi nelle dimensioni */
+        }
+.date {
+	color: #5C6AC4;
+}
+
+.game {
+	color: #093878;
+}
+.grid-container {
+
+    display: grid;
+    gap: 0px; /* Spazio tra le celle */
+}
+
+.cell {
+   
+    background-color: white; /* Colore di sfondo della cella */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid #000; /* Bordo della cella */
+    font-size: 10px;
+}
+
+.btn_state {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+.btn_state:hover {
+            background-color: #0056b3;
+        }
+        
+  .subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+  .item {
+            margin-right: 10px;
+        }       
+         .item:hover {
+            margin-right: 10px;
+             background-color: #dddddd;
+        }     
+        
+        
+ .alert {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Verde più vivace */
+    color: white; /* Testo bianco per contrasto */
+    border-radius: 8px; /* Angoli arrotondati */
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombra più morbida */
+    z-index: 1000;
+    font-family: 'Arial', sans-serif; /* Font più moderno */
+    text-align: center; /* Allineamento del testo al centro */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transizione per l'animazione */
+}
+
+
+
+.alert_btn {
+    margin-top: 15px;
+        margin-left: 15px;
+
+    padding: 10px 20px;
+    background-color: #fff; /* Pulsante bianco */
+    color: #4CAF50;
+    border: none;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 16px; 
+    transition: background-color 0.3s ease; /* Transizione per il colore di sfondo */
+}
+
+.alert_btn:hover {
+    background-color: #f1f1f1; /* Colore di sfondo al passaggio del mouse */
+}
