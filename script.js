@@ -556,7 +556,22 @@ for (let i = 0; i < width * height; i++) {
 
         keyboardContainer.appendChild(keyboardDiv);
     }
-    
+const simulateKeyPress = (key) => 
+//function simulateKeyPress(key) {
+        const event = new KeyboardEvent('keydown', {
+            key: key,
+            code: key === 'Backspace' ? 'Backspace' : key === 'Delete' ? 'Delete' : `Key${key}`,
+            char: key,
+            keyCode: key.charCodeAt(0), // Nota: keyCode è deprecato, ma può essere usato per compatibilità
+            bubbles: true
+        });
+    alert(lastcell.value);
+       lastcell.value=key;
+
+        document.dispatchEvent(event);
+        console.log(`Simulata pressione del tasto: ${key}`);
+    }
+      
     
   }/////if classic
 
@@ -571,18 +586,5 @@ for (let i = 0; i < width * height; i++) {
  function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
-function simulateKeyPress(key) {
-        const event = new KeyboardEvent('keydown', {
-            key: key,
-            code: key === 'Backspace' ? 'Backspace' : key === 'Delete' ? 'Delete' : `Key${key}`,
-            char: key,
-            keyCode: key.charCodeAt(0), // Nota: keyCode è deprecato, ma può essere usato per compatibilità
-            bubbles: true
-        });
-    alert(lastcell.value);
-       lastcell.value=key;
 
-        document.dispatchEvent(event);
-        console.log(`Simulata pressione del tasto: ${key}`);
-    }
 window.onload = getJson;///check
