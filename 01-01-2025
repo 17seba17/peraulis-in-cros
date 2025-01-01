@@ -1,0 +1,71 @@
+{
+  "data": "30 dicembre 2024",
+  "gioco": {
+    "puzzle": "classico",
+    "dimensioni": {
+      "larghezza": 4,
+      "altezza": 4
+    },
+    "sequenza":"MANDIUSUALSLITEE0EONTE0RE",
+    "orrizontali": [
+      {
+        "indizio": "",
+        "trad_indizio": "saluto informale",
+        "trad_sol": "ciao"
+      },
+      {
+        "indizio": "solit, consuetudinari, ordenari, cuotidian, abituâl",
+        "trad_indizio": "solito, consuetudinario, ordinario, quotidiano, abituale",
+        "trad_sol": "usuale"
+      },
+     {
+        "indizio": "",
+        "trad_indizio": "la guida Babbo Natale",
+        "trad_sol": "slitta"
+      },
+ {
+        "indizio": "periodi gjeologjic che al cjape dentri plui eris",
+        "trad_indizio": "periodi geologici che comprendono dentro più ere",
+        "trad_sol": "eone"
+      },
+{
+        "indizio": "",
+        "trad_indizio": "bevanda calda inglese a base di foglie",
+        "trad_sol": "té"
+      },
+{
+        "indizio": "",
+        "trad_indizio": "nello sacchi si muove solo di un passo",
+        "trad_sol": "re"
+      }
+    ],
+    "verticali": [
+      {
+        "indizio": "brovade e ...",
+        "trad_indizio": "brovade e ....",
+        "trad_sol": "musetto/cotecchino"
+      },
+      {
+       "indizio": "",
+        "trad_indizio": "azienda sanitaria locale",
+        "trad_sol": "ASL"
+      },
+     {
+        "indizio": "",
+        "trad_indizio": "quello che fa l'ozioso",
+        "trad_sol": "niente"
+      },
+ {
+       "indizio": "",
+        "trad_indizio": "colui che fornisce lavoro",
+        "trad_sol": "datore"
+      },
+ {
+       "indizio": "",
+        "trad_indizio": "Chaiken, scenggiatrice di 'The L Word'",
+        "trad_sol": "Ilene"
+      }
+    ]
+  }
+
+}
